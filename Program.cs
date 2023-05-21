@@ -1,6 +1,4 @@
-﻿while (true)
-{
-    Console.Write("Please provide the password length you want: ");
+﻿    Console.Write("Please provide the password length you want: ");
     string passwordLengthUserData = Convert.ToString(Console.ReadLine()!);
     int passwordLength = Convert.ToInt32(passwordLengthUserData);
     string[] letters = File.ReadAllLines("/Users/enesdemirel/Desktop/randomPasswordGenerator/password.txt");
@@ -23,5 +21,5 @@
 
     string wordsInOneLine = string.Join("", finalPassword);
     Console.WriteLine("Your Password: " + wordsInOneLine);
-}
+
 
